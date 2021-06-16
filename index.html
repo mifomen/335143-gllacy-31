@@ -13,24 +13,27 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page-body">
+  <input class="slider-background  visually-hidden" id="slide_1" type="radio" name="toggle" checked>
+  <input class="slider-background visually-hidden" id="slide_2" type="radio" name="toggle">
+  <input class="slider-background visually-hidden" id="slide_3" type="radio" name="toggle">
   <header class="main-header">
     <nav class="main-navigation">
     <a class="main-header-logo" href="index.html"><img src="img/header_main_logo.svg" width="154" height="64" alt="Логотип компании"></a>
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a>
           <ul>
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">Сливочное</a></li>
-            <li><a href="#">Щербет</a></li>
-            <li><a href="#">Фруктовый лет</a></li>
-            <li><a href="#">Мелорин</a></li>
+            <li><a href="blank.html">Новинки</a></li>
+            <li><a href="blank.html">Сливочное</a></li>
+            <li><a href="blank.html">Щербет</a></li>
+            <li><a href="blank.html">Фруктовый лет</a></li>
+            <li><a href="blank.html">Мелорин</a></li>
           </ul>
         </li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
-        <li><a href="#"><img src="img/search_icon.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
-        <li><a class="login-link" href="#">Вход</a></li>
-        <li><a href="#">Пусто</a></li>
+        <li><a href="blank.html">Доставка и оплата</a></li>
+        <li><a href="blank.html">О компании</a></li>
+        <li><a href="blank.html"><img src="img/search_icon.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
+        <li><a class="login-link" href="blank.html">Вход</a></li>
+        <li><a href="blank.html">Пусто</a></li>
       </ul>
       <div>
         С 10 до 20, ежедневно <br>
@@ -38,21 +41,24 @@
       </div>
     </nav>
   </header>
-  <main class="container">
+  <main class="main-content">
+    <h2 class="visually-hidden">Магазин мороженого Глейси</h2>
     <section>
-      <input class="container-background" type="radio" checked>
-      <input class="container-background" type="radio">
-      <input class="container-background" type="radio">
-      <ul class="container-list">
-        <li class="container-item">
+      <div class="slider-controls">
+        <label for="slide_1">Первый</label>
+        <label for="slide_2">Второй</label>
+        <label for="slide_3">Третий</label>
+      </div>
+      <ul class="slider-list">
+        <li class="slider-item">
           <h2>Пломбир с помадкой и клубничный щербет</h2>
           <a href="#">Давайте оба!</a>
         </li>
-        <li class="container-item">
+        <li class="slider-item">
           <h2>Шоколадный пломбир и лимонный сорбет</h2>
           <a href="#">Давайте оба!</a>
         </li>
-        <li class="container-item">
+        <li class="slider-item">
           <h2>Крем-брюле и пломбир с малиновым джемом</h2>
           <a href="#">Давайте оба!</a>
         </li>
@@ -62,12 +68,12 @@
       <h2 class="visually-hidden">Акции в нашем магазине</h2>
       <ul class="promotions-list">
         <li class="promotions-item">
-          <h3 class="promotions-header">Малинка даром!</h3>
+          <h3 class="promotions-title">Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <button type="button">Хочу варенье!</button>
         </li>
-        <li>
-          <h3>Шоколадки даром!</h3>
+        <li class="promotions-item">
+          <h3 class="promotions-title">Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
             бесплатно.</p>
           <button type="button">Хочу шоколадки!</button>
@@ -147,10 +153,10 @@
         <input type="submit" value="Отправить">
       </form>
     </section>
-    <section class="us-location">
+    <section class="location">
       <h2 class="visually-hidden"> Как нас найти!</h2>
       <img src="img/footer_map.jpg" alt="Карта, где находится наш магазин">
-      <div class="us-location-adress">
+      <div class="location-address">
         <p>
           Адрес главного офиса и<br>
           офлайн-магазина:<br>
@@ -169,21 +175,21 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="footer-colum-one">
-      <li class="footer-colum-one-item"><a href="#"><img src="img/facebook_icon.svg" alt="facebook"></a></li>
-      <li class="footer-colum-one-item"><a href="#"><img src="img/vk_icon.svg" alt="vk" class="src"></a></li>
-      <li class="footer-colum-one-item"><a href="#"><img src="img/instagram_icon.svg" alt="instagram"></a></li>
-      <li class="footer-colum-one-item"><a href="#"><img src="img/twitter_icon.svg" alt="twitter"></a></li>
+    <ul class="footer-social-list">
+      <li class="footer-social-list-item"><a href="#"><img src="img/facebook_icon.svg" alt="facebook"></a></li>
+      <li class="footer-social-list-item"><a href="#"><img src="img/vk_icon.svg" alt="vk" class="src"></a></li>
+      <li class="footer-social-list-item"><a href="#"><img src="img/instagram_icon.svg" alt="instagram"></a></li>
+      <li class="footer-social-list-item"><a href="#"><img src="img/twitter_icon.svg" alt="twitter"></a></li>
     </ul>
-    <div class="footer-colum-two">
-      <img class="footer-colum-two-image" src="img/icon_heart.svg" width="15" height="13" alt="icon-of-heart">
+    <div class="footer-contacts">
+      <img class="footer-contacts-image" src="img/icon_heart.svg" width="15" height="13" alt="icon-of-heart">
       <span>Для поставщиков</span>
       <span>Наши документы</span>
       <span>О производстве</span>
       <span>Экологические стандарты</span>
     </div>
-    <div class="footer-colum-three">
-      <img src="img/logo_htmlacademy.svg" alt="logo_htmlacademy">
+    <div class="footer-author-site">
+      <img class="footer-author-site-image" src="img/logo_htmlacademy.svg" alt="logo_htmlacademy">
       <p>Сделано в <a href="#">HTML Academy</a> © 2021</p>
     </div>
   </footer>

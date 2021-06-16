@@ -1,13 +1,62 @@
 :root {
-
 }
 .visually-hidden {
-  position: absolute!important;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0!important;
-	border: 0!important;
-	height: 1px!important;
-	width: 1px!important;
-	overflow: hidden
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
+/*
+.slider-controls label:checked {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 5px;
+  vertical-align: top;
+  font-size: 0;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main-header {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.slider_controls label:hover,
+.slider_controls label:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.slider_controls label:active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#slide_1:checked ~ .main-header #slide_1,
+#slide_2:checked ~ .main-header #slide_2,
+#slide_3:checked ~ .main-header #slide_3 {
+  display: block;
+}
+#slide_1:checked ~ .main-header label[for="slide_1"],
+#slide_2:checked ~ .main-header label[for="slide_2"],
+#slide_3:checked ~ .main-header label[for="slide_3"] {
+  background-color: rgba(255, 255, 255, 1);
+}
+#slide_1:checked ~ .main-header {
+  background-color: #849d8f;
+  background-image: url(../img/icecream_bg_1.png);
+}
+#slide_2:checked ~ .main-header {
+  background-color: #8996a6;
+  background-image: url(../img/icecream_bg_2.png);
+}
+#slide_3:checked ~ .main-header {
+  background-color: #9d8b84;
+  background-image: url(../img/icecream_bg_3.png);
+} */
