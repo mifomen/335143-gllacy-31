@@ -10,6 +10,51 @@
   width: 1px !important;
   overflow: hidden;
 }
+body * {
+  outline:  2px solid green;
+  outline-offset: 2px;
+}
+body {
+  font-family:  Roboto, Arial, sans-serif;
+  font-weight: 700;
+  background-color: #8996a6;
+}
+a {
+  text-decoration: none;
+}
+.nav-menu-list,
+.nav-sub-menu {
+  list-style: none;
+  padding: 0;
+  color:  #FFF;
+
+}
+.nav-sub-menu {
+  display: none;
+}
+.nav-menu-item {
+  border-bottom:  1px solid rgba(0,0,0,0.2);
+  display:  inline-block;
+}
+.nav-menu-item:hover,
+.nav-sub-menu-item:hover {
+background-color: #fff;
+border-radius: 25px;
+color:  #000;
+}
+.nav-menu-link {
+  color:  inherit;
+  font-family: inherit;
+  font-weight:  bold;
+
+}
+.nav-menu-link:hover {
+  border-radius:  25px;
+}
+
+.nav-sub-menu-link {
+  color:  #fff;
+}
 /*
 .slider-controls label:checked {
   display: inline-block;
@@ -59,4 +104,4 @@
 #slide_3:checked ~ .main-header {
   background-color: #9d8b84;
   background-image: url(../img/icecream_bg_3.png);
-} */
+  } */
