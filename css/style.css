@@ -10,6 +10,10 @@
   width: 1px !important;
   overflow: hidden;
 }
+body {
+  /* background-color: red; */
+}
+
 /*
 .slider-controls label:checked {
   display: inline-block;
