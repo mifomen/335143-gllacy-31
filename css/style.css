@@ -17,11 +17,36 @@ page-body * {
 body {
   font-family:  Roboto, Arial, sans-serif;
   font-weight: 700;
+}
+.page-body {
   background-color: #8996a6;
 }
+
 a {
   text-decoration: none;
 }
+
+.slider-controls  {
+  position: relative;
+}
+.slider-controls label {
+  position: relative;
+  font-size: 0;
+  top:  50px;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+#slide-1:checked ~ .slider-controls label[for="slide-1"],
+#slide-2:checked ~ .slider-controls label[for="slide-2"],
+#slide-3:checked ~ .slider-controls label[for="slide-3"] {
+  background-color: #fff;
+}
+
+
 .nav-menu-list,
 .nav-sub-menu {
   list-style: none;
@@ -67,20 +92,29 @@ a {
 .nav-sub-menu-link {
   color:  #fff;
 }
-/*
-.slider-controls label:checked {
+
+.slider-1,
+.slider-2,
+.slider-3 {
   display: inline-block;
   width: 21px;
+  box-sizing: border-box;
   height: 21px;
-  margin-right: 5px;
+  margin-right: 8px;
   vertical-align: top;
   font-size: 0;
   color: #fff;
-  background-color: transparent;
-  border: 2px solid blue;
+  border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
+.slider-3 {
+  margin-right: 0;
+}
+.slider-controls label:checked {
+background-color: #fff;
+}
+
 .main-header {
   height: 100vh;
   background-repeat: no-repeat;
@@ -95,28 +129,27 @@ a {
   background-color: rgba(255, 255, 255, 1);
 }
 
-#slide_1:checked ~ .main-header #slide_1,
-#slide_2:checked ~ .main-header #slide_2,
-#slide_3:checked ~ .main-header #slide_3 {
+#slide-1:checked ~ .page-body #slide-1,
+#slide-2:checked ~ .page-body #slide-2,
+#slide-3:checked ~ .page-body #slide-3 {
   display: block;
 }
-#slide_1:checked ~ .main-header label[for="slide_1"],
-#slide_2:checked ~ .main-header label[for="slide_2"],
-#slide_3:checked ~ .main-header label[for="slide_3"] {
-  background-color: rgba(255, 255, 255, 1);
+.page-body {
+  /*background-image: url(../img/icecream-bg-1.png);*/
 }
-#slide_1:checked ~ .main-header {
+
+#slide-1:checked ~ .page-body {
   background-color: #849d8f;
-  background-image: url(../img/icecream_bg_1.png);
+  background-image: url(../img/icecream-bg-1.png);
 }
-#slide_2:checked ~ .main-header {
+#slide-2:checked ~ .page-body {
   background-color: #8996a6;
-  background-image: url(../img/icecream_bg_2.png);
+  background-image: url(../img/icecream-bg-2.png);
 }
-#slide_3:checked ~ .main-header {
+#slide-3:checked ~ .page-body {
   background-color: #9d8b84;
-  background-image: url(../img/icecream_bg_3.png);
-  } */
+  background-image: url(../img/icecream-bg-3.png);
+  }
 
   /* Фон с пломбирами */
   .slider-list {

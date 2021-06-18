@@ -13,9 +13,8 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page-body">
-  <input class="slider-background  visually-hidden" id="slide-1" type="radio" name="toggle" checked>
-  <input class="slider-background visually-hidden" id="slide-2" type="radio" name="toggle">
-  <input class="slider-background visually-hidden" id="slide-3" type="radio" name="toggle">
+
+
   <header class="main-header">
     <nav class="nav-menu">
     <a class="main-header-logo" href="index.html"><img src="img/header-main-logo.svg" width="154" height="64" alt="Логотип компании"></a>
@@ -43,13 +42,17 @@
     </nav>
   </header>
   <main class="main-content">
+  <input class="slider-background visually-hidden" id="slide-1" type="radio" name="toggle" checked>
+  <input class="slider-background visually-hidden" id="slide-2" type="radio" name="toggle">
+  <input class="slider-background visually-hidden" id="slide-3" type="radio" name="toggle">
+  <div class="slider-controls">
+        <label class="slider-1" for="slide-1">Первый</label>
+        <label class="slider-2" for="slide-2">Второй</label>
+        <label class="slider-3" for="slide-3">Третий</label>
+      </div>
     <h2 class="visually-hidden">Магазин мороженого Глейси</h2>
     <section>
-      <div class="slider-controls">
-        <label for="slide-1">Первый</label>
-        <label for="slide-2">Второй</label>
-        <label for="slide-3">Третий</label>
-      </div>
+
       <ul class="slider-list">
         <li class="slider-item">
           <h2 class="slider-item-title">Пломбир с помадкой и клубничный щербет</h2>
