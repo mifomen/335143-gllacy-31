@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/noimilize-min.css">
+  <link rel="stylesheet" href="css/normilize-min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.png">
   <link rel="icon" href="favicon/icon-main.svg" type="image/svg+xml">
@@ -17,7 +17,7 @@
 
   <header class="main-header">
     <nav class="nav-menu">
-    <a class="main-header-logo" href="index.html"><img src="img/header-main-logo.svg" width="154" height="64" alt="Логотип компании"></a>
+      <a class="main-header-logo" href="index.html"><img src="img/header-main-logo.svg" width="154" height="64" alt="Логотип компании"></a>
       <ul class="nav-menu-list">
         <li class="nav-menu-item">
           <a class="nav-menu-link" href="catalog.html">Каталог</a>
@@ -32,24 +32,24 @@
         <li class="nav-menu-item"><a class="nav-menu-link" href="blank.html">Доставка и оплата</a></li>
         <li class="nav-menu-item"><a class="nav-menu-link" href="blank.html">О компании</a></li>
         <li class="nav-menu-item"><a class="nav-menu-link" href="blank.html"><img src="img/search-icon.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
-        <li class="nav-menu-item"><a class="nav-menu-link" class="login-link" href="blank.html">Вход</a></li>
-        <li class="nav-menu-item"><a class="nav-menu-link" href="blank.html">Пусто</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-link" class="login-link" href="blank.html"><img width="20" height="19" src="../img/header-login-btn.svg" alt="Login">Вход</a></li>
+        <li class="nav-menu-item"><a class="nav-menu-link" href="blank.html"><img src="../img/header-recycle-icon.svg" width="21" height="19" alt="recycle">Пусто</a></li>
       </ul>
-      <div>
+      <div class="nav-menu-work-time">
         С 10 до 20, ежедневно <br>
-        <a href="tel:88124502525">8 812 450-25-25</a>
+        <a class="nav-menu-work-time-tel" href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </nav>
   </header>
   <main class="main-content">
-  <input class="slider-background visually-hidden" id="slide-1" type="radio" name="toggle" checked>
-  <input class="slider-background visually-hidden" id="slide-2" type="radio" name="toggle">
-  <input class="slider-background visually-hidden" id="slide-3" type="radio" name="toggle">
-  <div class="slider-controls">
-        <label class="slider-1" for="slide-1">Первый</label>
-        <label class="slider-2" for="slide-2">Второй</label>
-        <label class="slider-3" for="slide-3">Третий</label>
-      </div>
+    <input class="slider-background visually-hidden" id="slide-1" type="radio" name="toggle" checked>
+    <input class="slider-background visually-hidden" id="slide-2" type="radio" name="toggle">
+    <input class="slider-background visually-hidden" id="slide-3" type="radio" name="toggle">
+    <div class="slider-controls">
+      <label class="slider-1" for="slide-1">Первый</label>
+      <label class="slider-2" for="slide-2">Второй</label>
+      <label class="slider-3" for="slide-3">Третий</label>
+    </div>
     <h2 class="visually-hidden">Магазин мороженого Глейси</h2>
     <section>
 
@@ -79,7 +79,7 @@
         <li class="promotions-item promotions-item-second">
           <h3 class="promotions-title">Шоколадки даром!</h3>
           <p class="promotions-info">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
-            бесплатно.</p>
+          бесплатно.</p>
           <button class="promotions-btn" type="button">Хочу шоколадки!</button>
         </li>
       </ul>
@@ -87,22 +87,22 @@
     <section class="catalog">
       <h2 class="visually-hidden">Каталог мороженного!</h2>
       <ul class="catalog-list">
-        <li class="catalog-item-hit catalog-item-hit">
+        <li class="catalog-list-item  item-hit ">
           <img class="item-image" src="img/hit-icecream-1.png" width="267" height="267" alt="Мороженое хит номер 1">
           <p class="item-price">310 &#8381;<span>/кг</span></p>
           <p class="item-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </li>
-        <li class="catalog-list-item catalog-item-hit">
+        <li class="catalog-list-item item-hit">
           <img class="item-image" src="img/hit-icecream-2.png" width="267" height="267" alt="Мороженое хит номер 2">
           <p class="item-price">380 &#8381;<span>/кг</span></p>
           <p class="item-description">Сливочно-кофейное с кусочками шоколада</p>
         </li>
-        <li class="catalog-list-item catalog-item-hit">
+        <li class="catalog-list-item item-hit">
           <img class="item-image" src="img/hit-icecream-3.png" width="267" height="267" alt="Мороженое хит номер 3">
           <p class="item-price">355 &#8381;<span>/кг</span></p>
           <p class="item-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
         </li>
-        <li class="catalog-list-item catalog-item-hit">
+        <li class="catalog-list-item item-hit">
           <img class="item-image" src="img/hit-icecream-4.png" width="267" height="267" alt="Мороженое хит номер 4">
           <p class="item-price">415 &#8381;<span>/кг</span></p>
           <p class="item-description">Сливочное крем-брюле с карамельной подливкой </p>
@@ -117,41 +117,42 @@
         <li class="about-us-item">
           <img src="img/features-ice-cream-icon.svg" width="49" height="49" alt="ice-cream-icon">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
-            и проверенных временем технологий.</p>
+          и проверенных временем технологий.</p>
         </li>
         <li class="about-us-item">
           <img src="img/features-cow-icon.svg" width="49" height="49" alt="ice-cream-icon">
           <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-            связывает долговременное сотрудничество.</p>
+          связывает долговременное сотрудничество.</p>
         </li>
         <li class="about-us-item">
           <img src="img/features-eco-icon.svg" width="49" height="49" alt="ice-cream-icon">
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
-            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
         <li class="about-us-item">
           <img src="img/features-thermometer-icon.svg" width="49" height="49" alt="ice-cream-icon">
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-            растаять в пути и позволяет сохранить превосходный вкус.</p>
+          растаять в пути и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
     </section>
     <section class="blog">
-    <article class="blog-theme">
-      <h2 class="visually-hidden">Новое в нашем блоге</h2>
-      <div class="blog-content">
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-        <img src="https://via.placeholder.com/150x100" alt="клубничный фон">
-      </div>
+      <h2 class="visually-hidden">Новости</h2>
+      <article class="blog-theme">
+        <h2 class="blog-theme-title">Новое в нашем блоге</h2>
+          <a class="blog-content-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <form class="blog-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-        </p>
-        <input type="email" name="email-for-subscribe" placeholder="email@excample.com" required>
-        <input type="submit" value="Отправить">
-      </form>
+      <div class="blog-form-wrapper">
+        <form class="blog-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="blog-form-info">
+            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+          <input  class="blog-form-email-sub"type="email" name="email-for-subscribe" placeholder="email@excample.com" required>
+          <input class="blog-form-btn" type="submit" value="Отправить">
+
+        </form>
+      </div>
     </section>
     <section class="location">
       <h2 class="visually-hidden"> Как нас найти!</h2>
@@ -167,10 +168,10 @@
         </p>
         <p>
           Для заказов по телефону:<br>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="location-address-tel" href="tel:+78005558628">+7 800 555-86-28</a><br>
           (с 10 до 20 ежедневно)
         </p>
-        <a href="#">Форма обратной связи</a>
+        <a class="location-link" href="blank.html">Форма обратной связи</a>
       </div>
     </section>
   </main>
@@ -182,8 +183,8 @@
       <li class="footer-social-list-item"><a href="#"><img src="img/twitter-icon.svg" alt="twitter"></a></li>
     </ul>
     <div class="footer-contacts">
-      <img class="footer-contacts-image" src="img/icon-heart.svg" width="15" height="13" alt="icon-of-heart">
-      <span>Для поставщиков</span>
+      <img class="footer-contacts-image" src="../img/heart-icon.svg" width="15" height="13" alt="icon-of-heart">
+      <span class="footer-contacts-bold">Для поставщиков</span>
       <span>Наши документы</span>
       <span>О производстве</span>
       <span>Экологические стандарты</span>
