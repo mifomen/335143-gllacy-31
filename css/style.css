@@ -537,30 +537,48 @@ z-index: ;*/
 
 .footer-contacts {
   position: relative;
-  width: 300px;
+  width: 400px;
   color:  #fff;
 }
 
 .footer-contacts span {
+  display: inline-block;
+  flex-wrap:  wrap;
+  width: 150px;
   margin-right:  32px;
-    /*border:  2px solid  blue;*/
+  /*border:  2px solid  blue;*/
 }
 .footer-contacts span:nth-child(odd) {
   margin-right:  0px;
-
 }
 
+.footer-contacts span:nth-last-child(1) {
+  width: 200px;
+}
 .footer-contacts-image {
   position: absolute;
   top: 0;
   left:  -20px;
 }
 .footer-contacts-bold {
-font-weight: 700;
+  font-weight: 700;
 }
 
-.footer-contacts,
-.footer-contacts * {
-  outline:  2px solid red;
-  outline-offset: -2px;
+.footer-author-site,
+.footer-author-site * {
+  /*outline:  2px solid red;
+  outline-offset: -2px;*/
 }
+
+.footer-author-site {
+  font-size: 12px;
+  line-height: 18px;
+color:  #fff;
+}
+
+.footer-author-site-link {
+color: #fff;
+
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+}
+
