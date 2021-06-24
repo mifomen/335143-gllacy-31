@@ -297,6 +297,10 @@ position: relative;
   list-style:  none;
   width: 100%;
 
+/*    display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;*/
+
 }
 .promotions-item {
   display: flex;
