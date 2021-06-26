@@ -135,7 +135,7 @@ a {
     position: relative;
   }
 
-  .1nav-sub-menu * {
+  .main-header1 * {
     outline: 2px solid red;
     outline-offset: -2px;
   }
@@ -538,6 +538,7 @@ display: block;
   width: var(--body-width);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  margin-top: 9px;
 }
 
 
