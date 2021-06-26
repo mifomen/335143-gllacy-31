@@ -53,12 +53,13 @@ a {
 }
 .main-content {
   position: relative;
+
 }
 
 
 .slider {
 
-  max-height: 525px;
+
 }
 
 
@@ -105,6 +106,8 @@ a {
 
     position: relative;
     margin-top:  6px;
+      width: var(--body-width);
+  margin:  0 auto;
   }
 
 
@@ -574,12 +577,13 @@ display: block;
 .slider {
   /*background-color: #849d8f;*/
   /*background-image: url(../img/icecream-bg-1.png);*/
-
+  width: var(--body-width);
   margin:  0 auto;
 /*  outline: 2px solid black;
 outline-offset: -2px;*/
-height:  800px;
+height:  525px;
 position: relative;
+max-height: 525px;
 }
 .slider-list {
   list-style: none;
@@ -938,8 +942,8 @@ outline-offset: -2px;*/
   display: flex;
   justify-content: space-around;
   margin-top:  40px;
+   width: var(--body-width);
   margin:  0 auto;
-  width: var(--conteiner-width);
 }
 
 
@@ -1128,31 +1132,39 @@ z-index: ;*/
 
 }
 
+
+.page-footer,
+.page-footer * {
+/*  outline:  2px solid red;
+  outline-offset: -2px;*/
+}
+
+
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 19px;
+  align-items: center;
+  padding: 0 27px;
   font-weight: 400;
   padding-top:  18px;
   margin:  0 auto;
-  width: var(--conteiner-width);
+  width: var(--body-width);
+  min-height:  60px;
+  padding-bottom:   15px;
 }
 
 .footer-social-list {
   list-style:  none;
   padding: 0;
-}
-.footer-social-list {
+
   font-size: 0;
 }
 .footer-social-list-item {
   display: inline-block;
   margin-right:  12px;
   /*background-color: rgba(255, 255, 255, 0.8);*/
-  border: 2px solid rgba(255, 255, 255, 0.5)
-}
+  border: 2px solid rgba(255, 255, 255, 0.5);
 
-.footer-social-list-item {
 
   border-radius: 50%;
   /*background: rgba(255, 255, 255, 0.8);*/
@@ -1176,9 +1188,11 @@ z-index: ;*/
 
 .footer-contacts span {
   display: inline-block;
-  flex-wrap:  wrap;
-  width: 150px;
+
+  width: 121px;
   margin-right:  32px;
+  /*padding: 5px;*/
+  box-sizing: border-box;
   /*border:  2px solid  blue;*/
 }
 .footer-contacts span:nth-child(odd) {
@@ -1190,25 +1204,37 @@ z-index: ;*/
 }
 .footer-contacts-image {
   position: absolute;
-  top: 0;
-  left:  -20px;
+  top: 4px;
+  left:  -24px;
 }
 .footer-contacts-bold {
   font-weight: 700;
 }
 
-.footer-author-site,
-.footer-author-site * {
-  /*outline:  2px solid red;
-  outline-offset: -2px;*/
+.footer-conacts-link {
+color: #FFFFFF;
+  font-size: 13px;
+line-height: 18px;
 }
+
 
 .footer-author-site {
   font-size: 12px;
   line-height: 18px;
   color:  #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 190px;
 }
+.footer-author-site-info {
 
+  width: 100%;
+  margin: 0;
+margin-top:  16px;
+}
 .footer-author-site-link {
   color: #fff;
 
