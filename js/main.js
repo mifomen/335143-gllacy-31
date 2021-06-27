@@ -22,6 +22,7 @@ let sliderThreeTitle = document.querySelector('.slider-title-3')
 
 
 sliderOneLabel.addEventListener('click',function (evt) {
+  // evt.preventDefault();
   bodyBg.classList.remove('page-bg-2')
   bodyBg.classList.remove('page-bg-3')
   bodyBg.classList.add('page-bg-1')
@@ -31,6 +32,7 @@ sliderOneLabel.addEventListener('click',function (evt) {
 })
 
 sliderTwoLabel.addEventListener('click',function (evt) {
+  // evt.preventDefault();
   bodyBg.classList.remove('page-bg-1')
   bodyBg.classList.remove('page-bg-3')
   bodyBg.classList.add('page-bg-2')
@@ -40,6 +42,7 @@ sliderTwoLabel.addEventListener('click',function (evt) {
 })
 
 sliderThreeLabel.addEventListener('click',function (evt) {
+  // evt.preventDefault();
   bodyBg.classList.remove('page-bg-2')
   bodyBg.classList.remove('page-bg-1')
   bodyBg.classList.add('page-bg-3')
