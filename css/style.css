@@ -43,6 +43,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0;
   transition: 500ms ease;
+  background-color: var(--bg-color-slider-1);
 }
 
 .page-bg-1 {
@@ -636,6 +637,7 @@ background-color: rgba(50, 50, 50, 0.3);
 .promotions-info {
   margin: 0;
   margin-top: 16px;
+  margin-bottom: 8px;
 }
 
 .promotions-link {
@@ -691,6 +693,7 @@ background-color: rgba(50, 50, 50, 0.3);
   width: var(--conteiner-width);
 }
 
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -700,6 +703,11 @@ background-color: rgba(50, 50, 50, 0.3);
   list-style: none;
   box-sizing: padding-box;
 }
+
+.catalog-grid {
+row-gap:  40px;
+}
+
 
 .catalog-list-item {
  position: relative;
