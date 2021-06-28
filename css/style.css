@@ -233,11 +233,13 @@ a {
   padding-top: 18px;
   padding-bottom:  10px;
   padding:  9px 13px 11px 13px;
+  border-radius: 26px;
 }
+
 
 .nav-menu-link:hover {
   background-color: var(--basic-white);
-  border-radius: 26px;
+  /*border-radius: 26px;*/
   font-family: var(--basic-font);
   font-style: normal;
   font-weight: bold;
@@ -259,7 +261,6 @@ a {
 .link-for-search path {
   fill: var(--basic-white);
 }
-
 .link-for-search:hover path {
  transition: 300ms ease;
  fill: var(--basic-black);
@@ -282,10 +283,11 @@ a {
   font-weight: bold;
 }
 
+.blog-form-email-sub:hover,
 .input-search:hover {
   border: 2px solid #d3d3d2;
 }
-
+.blog-form-email-sub:active,
 .input-search:active {
  border: 2px solid rgba(46, 136, 228, 0.52);
  box-sizing: border-box;
@@ -332,17 +334,30 @@ a {
   background-color: rgba(255,255,255,.2);
   border-radius: 20px;
 }
-
+.nav-menu-search svg{
+  /*fill:  var(--basic-black);*/
+}
 .nav-menu-search svg{
   position: absolute;
   left: 12px;
   top: 6px;
 }
 
-.nav-menu-search path {
+/*.nav-menu-search:hover .nav-menu-last-icons path {
+  fill:  #eda;
+}*/
+.nav-menu-link path {
   fill:  var(--basic-white);
 }
-.nav-menu-search:hover path {
+
+.nav-menu-item:hover .nav-menu-link  {
+  font-weight:  700;
+  color:  var(--basic-black);
+  background-color:  var(--basic-white);
+/*border-radius: 26px;*/
+}
+
+.nav-menu-item:hover .nav-menu-link path {
   fill:  var(--basic-black);
 }
 
@@ -382,7 +397,7 @@ a {
 .login-form-email:focus,
 .login-form-email:active,
 .login-form-password:focus,
-.login-form-email:active {
+.login-form-password:active {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
 
@@ -944,13 +959,19 @@ margin-bottom: 40px;
 }
 
 .blog-form-email-sub {
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   border-radius: 6px;
   width: 368px;
   height: 44px;
   margin: 0;
   margin-left:  20px;
   margin-right:  10px;
+  padding-left:  15px;
+  outline:  none;
+  font-weight:  bold;
+  box-sizing: border-box;
+
+ /*border: 2px solid rgba(46, 136, 228, 0.52);*/
 }
 
 .blog-form-email-sub::-webkit-input-placeholder,
@@ -965,6 +986,7 @@ margin-bottom: 40px;
   /*padding: 14px;*/
   font-weight:  normal;
 }
+
 .blog-form-email-sub:-ms-input-placeholder,
 .input-search:-ms-input-placeholder,
 .login-form-email:-ms-input-placeholder { /* IE 10+ */
