@@ -488,6 +488,8 @@ background-color: rgba(50, 50, 50, 0.3);
 }
 
 .main-content {
+  margin: 0 auto;
+  width: var(--body-width);
 
 }
 .slider-1,
@@ -1259,6 +1261,7 @@ border-radius: 26px;
   list-style:  none;
   padding: 0;
   margin: 0;
+  margin-bottom:  9px;
 
 
   /*width: 224px;*/
@@ -1312,10 +1315,33 @@ line-height: 16px;
     line-height: 16px;
 }
 .arrow:after {
-  content: "»";
+  content:"";
+    /*content: "»";*/
      position: absolute;
+     display: block;
     top: 1px;
+    background-image: url("../img/double-arrow.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    /*outline:  1px solid;*/
+    width: 6px;
+    height: 6px;
     right: -13px;
+    top:  calc(50% - 2px);
+}
+
+
+.arrow:hover {
+color: #FFBC9E;
+}
+.arrow:hover:before {
+
+  background-color: #FFBC9E;
+}
+
+.current-page-now {
+  background-color: #D07058;
+  color:  var(--basic-white);
 }
 
 
@@ -1342,3 +1368,63 @@ background-image: url("");
 
 }*/
 
+.main-content-title {
+  font-family:  var(--basic-font);
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color:  var(--basic-white);
+  margin: 0;
+  padding: 0;
+}
+
+.filter_item_body {
+
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 7px 12px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 18px;
+    position: relative;
+}
+.filter_item_body:before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 10px solid #fff;
+  }
+
+.filter-sort-select{
+  padding-right: 25px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.filter-sort-select::-ms-expand{
+  display: none;
+}
+.filter-sort-select:hover,
+.filter-sort-select:focus{
+  color: #323232;
+}
+.filter_sort .filter_item_body:hover::before,
+.filter-sort-select:focus + .filter_item_body::before{
+  border-top-color: #323232;
+}

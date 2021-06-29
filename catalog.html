@@ -20,7 +20,7 @@
           <a  class="nav-menu-link current" href="catalog.html">Каталог</a>
           <ul class="nav-sub-menu">
             <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link nav-sub-menu-new" href="blank.html">Новинки</a></li>
-            <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link" href="blank.html">Сливочное</a>
+            <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link current-page-now " href="blank.html">Сливочное</a>
             </li>
             <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link" href="blank.html">Щербет</a></li>
             <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link" href="blank.html">Фруктовый лет</a></li>
@@ -89,17 +89,18 @@
       </svg> -->
     </li>
     <li class="current-page-item"><a class="current-page-link arrow" href="#">Каталог</a></li>
-    <li class="current-page-item"><a class="current-page-link" href="#">Сливочное</a></li>
+    <li class="current-page-item"><span class="current-page-link">Сливочное</span></li>
   </ul>
 
 
 
 
-    <h2>Сливочное мороженое</h2>
+    <h2  class="main-content-title">Сливочное мороженое</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-      <div>
-        <p>Сортировка</p>
-          <select name="sort" id="filter-sort-input">
+      <p>Сортировка</p>
+      <div class="filter_item_body">
+
+          <select class="filter-sort-select" name="sort" id="filter-sort-input">
             <option value="popular-sort" selected>по популярности</option>
             <option value="small-price-sort">сначала недорогие</option>
             <option value="big-price-sort">сначала дорогие</option>
