@@ -88,6 +88,34 @@ sliderThreeLabel.addEventListener('click',function (evt) {
 
 
 
+let CloseFeedBackBtn = document.querySelector('.feedback-close-btn')
+let ModalForm = document.querySelector('.feedback-modal')
+let FeedSubmitBtn = document.querySelector('feedback-btn')
+
+
+
+
+CloseFeedBackBtn.addEventListener('click', function (evt) {
+  ModalForm.classList.remove('feedback-modal-active')
+})
+
+let OpenFeedBackBtn = document.querySelector('.location-link')
+OpenFeedBackBtn.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  ModalForm.classList.add('feedback-modal-active')
+})
+
+
+window.addEventListener('keydown', function(key){
+  if(key.keyCode === 27) {
+    key.preventDefault();
+    if(ModalForm.classList.contains('feedback-modal-active')) {
+   ModalForm.classList.remove('feedback-modal-active')
+    }
+  }
+});
+
+
 
 
 // 59.968341981799256, 30.317198608327054
