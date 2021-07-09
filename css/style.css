@@ -4,7 +4,7 @@
   --conteiner-width:  1146px;
   --basic-black: #323232;
   --white:  #FFFFFF;
-  --basic-bg-color: rgba(255, 255, 255, 0.2);
+    --basic-bg-color: rgba(255, 255, 255, 0.2);
   --border-color:  rgba(178, 178, 178, 0.52);
   --box-shadow-link:  0px 2px 2px rgba(172, 16, 0, 0.64);
   --bg-color-slider-1: #849d8f;
@@ -33,6 +33,10 @@
   --arrow-color: #FFBC9E;
   --gradient-bg-1: #F26843;
   --gradient-bg-2: #E74A35;
+  --footer-icon-border-color: rgba(255, 255, 255, 0.5);
+  --footer-svg-fill: rgba(255, 255, 255, 0.8);
+  --footer-border-active-color: rgba(255, 255, 255, 0.7);
+
 
   --basket-border-color: #CACAC7;
   --bascket-color: #999999;
@@ -47,24 +51,24 @@
   font-weight: 400; // может быть не указано при таком неправильном способе
   font-style: normal;
   src: local("Roboto"),
-       url("fonts/roboto.woff2") format("woff2"),
-       url("fonts/roboto.woff") format("woff");
+       url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto Bold"; // указали насыщенность прямо в семействе
   font-weight: 700; // может быть не указано при таком неправильном способе
   font-style: normal;
   src: local("Roboto Bold"),
-       url("fonts/robotobold.woff2") format("woff2"),
-       url("fonts/robotobold.woff") format("woff");
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto Medium Bold"; // указали насыщенность прямо в семействе
   font-weight: 500; // может быть не указано при таком неправильном способе
   font-style: normal;
   src: local("Roboto Medium Bold"),
-       url("fonts/robotomedium.woff2") format("woff2"),
-       url("fonts/robotomedium.woff") format("woff");
+       url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
 }
 
 .visually-hidden {
@@ -183,15 +187,23 @@ a {
   background: var(--white);
   box-shadow: var(--nav-menu-box-shadow);
   border-radius: 4px;
-  display: none;
 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  /*padding: 0 0 8px;*/
+
+  box-sizing: border-box;
+
+  /*mifomen*/
+ display: none;
 }
 .nav-sub-menu-link {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-black);
   font-weight:  400;
-  padding:  15px;
+  /*padding:  15px;*/
+  padding: 5px 0px 5px 21px;
   display: block;
 }
 
@@ -200,16 +212,39 @@ a {
   position:  relative;
 
 }
+.nav-sub-menu-item {
+  font-size: 14px;
+  line-height: 18px;
+   margin-bottom: 5px;
+}
+.nav-sub-menu-item:nth-child(1) {
+  position: relative;
+  padding-bottom: 6px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
 .nav-sub-menu-item:nth-child(1):after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 32px;
+  left: 5px;
+  width: 92%;
+  height: 1px;
+  background-color: rgba(0,0,0,0.2);
+}
+/*.nav-sub-menu-item:nth-child(1):after {
   content: "";
   display: block;
   position: absolute;
   left: 6px;
-  top: 44px;
+  top: 25px;
   width: 128px;
-  height: 2px;
+  height: 1px;
   background-color: rgba(50, 50, 50, 0.2);
-}
+}*/
 
 .nav-menu-item:hover .nav-sub-menu {
   display: block;
@@ -222,19 +257,16 @@ a {
  border-radius: 26px;
 }
 
-.nav-sub-menu-item {
-  font-size: 14px;
-  line-height: 18px;
-}
 
-.nav-sub-menu-item:nth-child(1) {
+
+/*.nav-sub-menu-item:nth-child(1) {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 .nav-sub-menu-item:nth-last-child(1) {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-}
+}*/
 
 .nav-sub-menu-item:hover {
   background-color: var(--item-color-hover);
@@ -835,11 +867,17 @@ row-gap:  40px;
 .catalog-list-item {
  position: relative;
  width: 267px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: flex-start;
 }
 
 .item-image {
   position: relative;
   z-index: 5;
+  margin-bottom:  17px;
+  border-radius: 50%;
 }
 
 .item-price {
@@ -854,6 +892,8 @@ row-gap:  40px;
   color: var(--white);
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
   z-index:  5;
+  height: 31px;
+
 }
 
 .item-weight {
@@ -865,6 +905,8 @@ row-gap:  40px;
  width: 267px;
  height: 44px;
  position: relative;
+ padding: 0;
+ /*margin:  0 16px;*/
  z-index: 15;
  font-family: var(--basic-font);
  font-style: normal;
@@ -874,32 +916,37 @@ row-gap:  40px;
  text-align: center;
  color: var(--white);
  text-decoration: underline;
- text-decoration-color: var( --basic-bg-color);;
+ text-decoration-color: var( --basic-bg-color);
+ /*margin-bottom: 11px;*/
 }
 
-/*.close {
-  height: 1px;
-  max-height: 1px;
-  display: none
-  }*/
+.item-description:hover {
+  text-decoration-color: var(--white);
+}
+
 
 .item-show {
   position: absolute;
   display: none;
+  /*display: block;*/
+  bottom: -50px;
+  /*mifomen*/
   z-index: 5;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  background: linear-gradient(180deg, var(--gradient-bg-1) 0%, #E84D37 100%);
+  background: linear-gradient(180deg, var(--gradient-bg-1) 0%, var(--basket-inner) 100%);
   box-shadow: 0px 1px 2px var(--slider-shadow);
   border-radius: 50px;
   color: var(--white);
-  padding: 12px 16px;
+  padding: 12px 0px;
   margin:0;
   text-align:  center;
-  box-sizing: padding-box;
+  box-sizing: border-box;
   width: 200px;
+  max-height: 44px
   /*max-width:  200px;*/
 }
 
@@ -908,7 +955,7 @@ row-gap:  40px;
   position: absolute;
   top:  0;
   left:  0;
-  z-index: 15;
+  z-index: 25;
   content: "";
   width: 61px;
   height: 61px;
@@ -919,6 +966,8 @@ row-gap:  40px;
   border-radius: 50%;
 
 }
+
+
 
 .catalog-list-item:after {
   content: "";
@@ -931,12 +980,20 @@ row-gap:  40px;
   position: absolute;
   padding:  6px 13px;
   width: calc(100% + 0px);
-  height: calc(100% + 55px);
-  top:-6px;
+  width: 293px;
+  height: calc(100% + 51px);
+  top:-7px;
   left:  -13px;
   z-index: 0;
+  padding-bottom:  21px;
+  height: 402px;
+  box-sizing: border-box;
 }
+/*mifomen*/
+.catalog-list-item:nth-child(1):after {
 
+  /*display: block;*/
+}
 
 .catalog-list-item:hover:after {
    display: block;
@@ -1152,12 +1209,8 @@ margin-bottom: 40px;
   border-radius: 70px;
 }
 
-.map {
-  min-height:  360px;
-  width: 100%;
-  max-height:  550px;
-}
-.location {
+
+.location1 {
   position: relative;
   width: 100%;
   padding: 0;
@@ -1188,6 +1241,7 @@ margin-bottom: 40px;
   width: 303px;
   font-weight:  400;
   position: absolute;
+  z-index:  25;
   right: 27px;
   top: 62px;
   font-size: 14px;
@@ -1236,6 +1290,11 @@ margin-bottom: 40px;
   line-height: 24px;
 }
 
+/*.page-footer,
+.page-footer * {
+outline:  1px solid green;
+outline-offset: -1px;
+}*/
 .page-footer {
   display: flex;
   justify-content: space-between;
@@ -1260,8 +1319,8 @@ margin-bottom: 40px;
 .footer-social-list-item {
   display: inline-block;
   margin-right:  12px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  fill:  rgba(255, 255, 255, 0.8);
+  border: 2px solid var(--footer-icon-border-color);
+  fill:  var(--footer-svg-fill);
 
   border-radius: 50%;
 }
@@ -1272,16 +1331,16 @@ margin-bottom: 40px;
  }
 
 .footer-social-list-item:hover{
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--footer-icon-border-color);
   fill: var(--white);
 }
 .footer-social-list-item:active{
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--footer-border-active-color);
    fill: var(--white);
 }
 .footer-contacts {
   position: relative;
-  width: 400px;
+  width: 365px;
   color:  var(--white);
 }
 
@@ -1335,6 +1394,9 @@ margin-bottom: 40px;
   position: absolute;
   bottom: -1px;
 }
+.footer-contacts-item:hover .footer-conacts-link:after {
+  background-color: var(--white);
+}
 
 .footer-author-site {
   font-size: 12px;
@@ -1348,7 +1410,7 @@ margin-bottom: 40px;
   width: 190px;
 }
 .footer-author-site-info {
-  width: 100%;
+  /*width: 100%;*/
   margin: 0;
   margin-top:  16px;
 }
@@ -1358,13 +1420,11 @@ margin-bottom: 40px;
 }
 
 
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-#map {
-  height: 100%;
+.footer-author-name:hover .footer-author-site-link {
+
+  border-bottom-color: var(--white);
 }
 
-/* Optional: Makes the sample page fill the window. */
 
 
 .current {
@@ -1674,25 +1734,26 @@ background-color: var(--white);
 
 
 .price-range-box {
-
   display: flex;
-
   align-items: center;
   min-height: 36px;
-    max-height: 36px;
-  padding: 7px 12px;
+  max-height: 36px;
+  padding: 7px 21px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   background-color: var(--basic-bg-color:);
   border-radius: 20px;
   box-sizing: border-box;
+  background-color: var(--basic-bg-color);
+  border-radius: 20px;
 }
 
 .price-range-control-line {
   position: relative;
   width: 176px;
   height: 4px;
+  /*left:  6px;*/
   background-color: rgba(255,255,255,.5);
   font-size: 0;
 }
@@ -1710,7 +1771,7 @@ background-color: var(--white);
 
 .price-range-control-line-center{
   position: absolute;
-  left: 35px;
+  left: 30px;
   width: 90px;
   height: 4px;
   background-color: rgba(255,255,255,1);
@@ -1752,7 +1813,7 @@ background-color: var(--white);
   margin-right: 0;
   min-height: 36px;
   max-height: 36px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: var(--basic-bg-color);
   border-radius: 20px;
   box-sizing: border-box;
   padding-top:  7px;
@@ -1810,7 +1871,7 @@ background-color: var(--white);
 
 
 .filter-item-fill-body {
-background: rgba(255, 255, 255, 0.2);
+background-color: var(--basic-bg-color);
 border-radius: 20px;
 padding:  8px 16px;
 box-sizing: border-box;
@@ -1886,7 +1947,7 @@ line-height: 18px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: var(--basic-bg-color);
   border: 2px solid var(--white);
   color: var(--white);
   border-radius: 20px;
@@ -1968,7 +2029,7 @@ margin-left:  12px
   transform: rotate(-180deg) translateX(3px);
   margin-right: 16px;
 
-  fill:  rgba(255, 255, 255, 0.2);;
+  fill:  var(--basic-bg-color);
 }
 
 .catalog-svg {
@@ -2315,4 +2376,48 @@ animation: shake .6s;
 
 .footer-blank {
   margin-top:  600px;
+}
+
+
+.map-wrapper {
+  position: relative;
+  /*width: var(--body-width);*/
+  min-height: 430px;
+}
+
+.map-block {
+     position: relative;
+  left: 0;
+    right: 0;
+
+    /*width: calc(100vw - (100vw - 100%));*/
+    width: 100vw;
+     margin-left: calc(50% - 50vw - 9px);
+    height: 430px;
+
+    background-color: #ffffff;
+    background-image: url('../img/location-map.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #map {
+   position: absolute;
+   left: 0;
+   /*right: 0;*/
+   height: 100%; /* Рекомендация Google*/
+   /*width: calc(100vw - (100vw - 100%));*/
+   z-index: 25;
+  /*      left: 50%;
+  transform: translateX(-50%);*/
+  overflow: hidden;
+  width: 100vw;
+    margin-left: calc(50% - 50vw - 9px);
+}
+
+
+/* for maps elements*/
+.gmnoprint {
+  display: none;
 }
