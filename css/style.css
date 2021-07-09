@@ -1629,10 +1629,12 @@ background-image: url("");
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 10px 51px 8px 16px;
+  padding: 13px 0px 10px 16px;
   border-radius: 20px;
   box-sizing: border-box;
-  min-width: 100%;
+  /*min-width: 100%;*/
+  width: 196px;
+  /*height: 36px;*/
  /* max-height: 36px;*/
 
 
