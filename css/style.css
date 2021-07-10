@@ -72,13 +72,13 @@
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
 }
 html,
@@ -128,6 +128,7 @@ a {
 .slider-controls label {
   position: relative;
   font-size: 0;
+  vertical-align: baseline;
   top:  50px;
   display: inline-block;
   width: 21px;
@@ -259,6 +260,8 @@ a {
   align-items: center;
   flex-shrink: 0;
   height: 100%;
+  padding: 0;
+  list-style: none;
 }
 .right-column {
   justify-content: flex-end;
@@ -898,6 +901,7 @@ a {
 }
 .about-us-item-info {
   display: inline-block;
+  vertical-align: baseline;
   width: 484px;
 }
 .about-us-item:before {
@@ -1146,6 +1150,7 @@ a {
 }
 .footer-social-list-item {
   display: inline-block;
+  vertical-align: baseline;
   margin-right:  12px;
   border: 2px solid var(--footer-icon-border-color);
   fill:  var(--footer-svg-fill);
@@ -1171,6 +1176,7 @@ a {
 }
 .footer-contacts-item {
   display: inline-block;
+  vertical-align: baseline;
   width: 121px;
   margin-right:  32px;
   box-sizing: border-box;
@@ -1608,6 +1614,7 @@ a {
   width: 20px;
   height: 20px;
   display: inline-block;
+  vertical-align: baseline;
   background-image: url("../img/checkbox-off-icon.svg");
   background-repeat: no-repeat;
   opacity: 1;
@@ -1638,6 +1645,7 @@ a {
 }
 .filter-item-fill-body input[type="checkbox"]:checked + label:after{
   display: inline-block;
+   vertical-align: baseline;
 }
 .catalog-filter-button {
   font-family: var(--basic-font);
@@ -1680,6 +1688,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: baseline;
   padding: 5px 0px 5px 8.8px;
   width: 26px;
   height: 26px;
@@ -1704,6 +1713,7 @@ a {
   margin: 0;
   width: 12px;
   display: inline-block;
+  vertical-align: baseline;
   box-sizing: border-box;
   position: relative;
   transform: translateX(6px);

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normilize-min.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.png">
   <link rel="icon" href="img/favicon/icon-main.svg" type="image/svg+xml">
@@ -16,13 +16,13 @@
   <header class="main-header">
     <nav class="nav-menu">
       <a  class="main-header-logo" href="index.html"><img src="img/header-main-logo.svg" width="154" height="64" alt="Логотип компании"></a>
-      <ul class="nav-menu-list">
-        <div class="left-column">
+      <div class="nav-menu-list">
+        <ul class="left-column">
           <li class="nav-menu-item">
             <a  class="nav-menu-link" href="catalog.html">Каталог</a>
             <ul class="nav-sub-menu">
               <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link nav-sub-menu-new" href="blank.html">Новинки</a></li>
-              <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link" href="blank.html">Сливочное</a>
+              <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link" href="catalog.html">Сливочное</a>
               </li>
               <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link" href="blank.html">Щербет</a></li>
               <li class="nav-sub-menu-item"><a  class="nav-sub-menu-link" href="blank.html">Фруктовый лет</a></li>
@@ -35,16 +35,17 @@
           <li class="nav-menu-item">
             <a  class="nav-menu-link" href="blank.html">О компании</a>
           </li>
-
-        </div>
-        <div class="right-column">
+        </ul>
+        <ul class="right-column">
 
           <li class="nav-menu-item nav-menu-item-search">
             <a onclick="return false" class="nav-menu-link link-for-search" href="blank.html"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg><span class="visually-hidden">Поиск</span>
 
             </a>
             <div class="input-search-wrapper">
-              <input class="input-search" type="search" placeholder="Крем-брюле">
+              <label for="search">
+                <input class="input-search" id="search" type="search" placeholder="Крем-брюле">
+              </label>
             </div>
           </li>
           <li class="nav-menu-item  nav-menu-search">
@@ -68,18 +69,18 @@
               </ul>
             </div>
           </form>
-        </li>
-        <li class="nav-menu-item nav-menu-search">
+          </li>
+          <li class="nav-menu-item nav-menu-search basket">
           <a  class="nav-menu-link nav-menu-last-icons" href="blank.html">
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="#eda" xmlns="http://www.w3.org/2000/svg">
+            <svg class="basket-svg" width="21" height="20" viewBox="0 0 21 20" fill="#eda" xmlns="http://www.w3.org/2000/svg">
               <path class="basket-svg" d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" />
               <path class="basket-svg" d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" />
               <path class="basket-svg" d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" />
             </svg>
           Пусто</a>
-        </li>
-      </div>
-    </ul>
+          </li>
+        </ul>
+    </div>
     <div class="nav-menu-work-time">
       С 10 до 20, ежедневно <br>
       <a  class="nav-menu-work-time-tel" href="tel:88124502525">8 812 450-25-25</a>
@@ -110,7 +111,7 @@
   </span>
   </div>
   <div class="footer-author-site">
-    <a class="footer-author-site-info" href="https://htmlacademy.ru/intensive/htmlcss"> <img class="footer-author-site-image" src="img/logo-htmlacademy.svg" alt="logo-htmlacademy"></a>
+    <a class="footer-author-site-info" href="https://htmlacademy.ru/intensive/htmlcss"> <img class="footer-author-site-image" src="img/logo-htmlacademy.svg"  width="108" height="31" alt="logo-htmlacademy"></a>
     <p class="footer-author-name">Сделано в <a  class="footer-author-site-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2021</p>
   </div>
 </footer>
