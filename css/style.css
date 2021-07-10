@@ -994,19 +994,39 @@ a {
   margin-right:  10px;
   padding-left:  15px;
   outline:  none;
-  font-weight:  bold;
+  font-weight:  700;
   box-sizing: border-box;
 }
-.blog-form-email-sub:-webkit-input-placeholder,
-.input-search:-webkit-input-placeholder,
-.login-form-email:-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
   font-weight:  400;
 }
-.blog-form-email-sub:-moz-placeholder ,
-.input-search:-moz-placeholder ,
-.login-form-email:-moz-placeholder { /* Firefox 19+ */
+
   font-weight:  400;
 }
+
+ font-weight:  400;
+}
+
+/* Chrome/Opera/Safari */
+.blog-form-email-sub::-webkit-input-placeholder {
+  font-weight:  400;
+}
+.input-search::-webkit-input-placeholder {
+  font-weight:  400;
+}
+.login-form-email::-webkit-input-placeholder {
+  font-weight:  400;
+}
+
+.blog-form-email-sub::-webkit-input-placeholder {
+    font-weight:  400;
+}
+.blog-form-email-sub::-moz-placeholder,
+.input-search::-moz-placeholder,
+.login-form-email::-moz-placeholder { /* Firefox 19+ */
+  font-weight:  400;
+}
+
 .blog-form-email-sub:-ms-input-placeholder,
 .input-search:-ms-input-placeholder,
 .login-form-email:-ms-input-placeholder { /* IE 10+ */
