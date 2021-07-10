@@ -2009,9 +2009,9 @@ a {
  position: relative;
  left: 0;
  right: 0;
- /*width: calc(100vw - (100vw - 100%));*/
- width: 100vw;
- margin-left: calc(50% - 50vw - 9px);
+ width: calc(100vw - (100vw - 100%));
+ /*width: 100vw;*/
+ /*margin-left: calc(50% - 50vw - 0px);*/
  height: 430px;
  background-color: #ffffff;
  background-image: url('../img/location-map.jpg');
@@ -2029,7 +2029,9 @@ a {
  z-index: 25;
   overflow: hidden;
   width: 100vw;
+
   margin-left: calc(50% - 50vw - 9px);
+   /*width: calc(100vw - (100vw - 100%));*/
 }
 
 /* for maps elements*/
