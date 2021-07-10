@@ -34,6 +34,7 @@
   --arrow-color: #FFBC9E;
   --gradient-bg-1: #F26843;
   --gradient-bg-2: #E74A35;
+  --gradient-bg-3:rgba(0, 0, 0, 0.07);
   --border-color-after: rgba(0,0,0,0.2);
   --footer-icon-border-color: rgba(255, 255, 255, 0.5);
   --footer-svg-fill: rgba(255, 255, 255, 0.8);
@@ -42,6 +43,7 @@
   --basket-border-color: #CACAC7;
   --bascket-color: #999999;
   --default-black:  #000;
+  --color-close-btn: #231F20;
 
 }
 @font-face {
@@ -336,10 +338,12 @@ a {
   outline: none;
   font-weight: bold;
 }
+.feedback-input-field:hover,
 .blog-form-email-sub:hover,
 .input-search:hover {
   border: 2px solid var(--form-border-color);
 }
+.feedback-input-field:active,
 .blog-form-email-sub:active,
 .input-search:active {
  border: 2px solid var(--form-border-color-input);
@@ -1008,6 +1012,12 @@ a {
 }
 
 /* Chrome/Opera/Safari */
+.feedback-input-name::-webkit-input-placeholder1 {
+   font-weight:  400;
+}
+.feedback-input-field::-webkit-input-placeholder {
+  font-weight:  400;
+}
 .blog-form-email-sub::-webkit-input-placeholder {
   font-weight:  400;
 }
@@ -1021,17 +1031,21 @@ a {
 .blog-form-email-sub::-webkit-input-placeholder {
     font-weight:  400;
 }
+.feedback-input-field::-moz-placeholder {
+  font-weigh: bold;
+}
 .blog-form-email-sub::-moz-placeholder,
 .input-search::-moz-placeholder,
 .login-form-email::-moz-placeholder { /* Firefox 19+ */
   font-weight:  400;
 }
-
+.feedback-input-field:-ms-input-placeholder,
 .blog-form-email-sub:-ms-input-placeholder,
 .input-search:-ms-input-placeholder,
 .login-form-email:-ms-input-placeholder { /* IE 10+ */
   font-weight:  400;
 }
+.feedback-input-field:-moz-placeholder,
 .blog-form-email-sub:-moz-placeholder,
 .input-search:-moz-placeholder,
 .login-form-email:-moz-placeholder { /* Firefox 18- */
@@ -1905,6 +1919,8 @@ a {
   width: 100%;
   box-sizing: border-box;
   border-radius: 4px;
+  font-weight: 700;
+  /*mifomen*/
 }
 .feedback-input-name,
 .feedback-input-email {
@@ -1929,7 +1945,7 @@ a {
 .feedback-close-btn {
   position: absolute;
   top: 15px;
-  right: 16px;
+  right: 12px;
   width: 18px;
   height: 18px;
   margin: 0;
@@ -1945,7 +1961,7 @@ a {
 .feedback-close-btn:after {
   content: "";
   position: absolute;
-  background-color: var(--default-black);
+  background-color: var(--color-close-btn);
 }
 .feedback-close-btn:before{
   -webkit-transform: rotate(45deg);
@@ -1958,10 +1974,10 @@ a {
 .feedback-close-btn:before,
 .feedback-close-btn:after {
   position: absolute;
-  top: 3px;
-  left: -2px;
+  top: 6px;
+  left: 0px;
   width: 15px;
-  height: 1px;
+  height: 2px;
 }
 .feedback-bg:before {
   content:"";
@@ -2058,3 +2074,47 @@ a {
 .gmnoprint {
   display: none;
 }
+/*input animation*/
+/*input::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 500ms ease;
+}
+input::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 500ms ease;
+}
+input:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 500ms ease;
+}
+input:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 500ms ease;
+}
+input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 500ms ease;
+}
+input:focus::-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 500ms ease;
+}
+input:focus:-moz-placeholder {
+  text-indent: 500px;
+  transition: text-indent 500ms ease;
+}
+input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  transition: text-indent 500ms ease;
+}*/
+
+
+/*input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+*/
