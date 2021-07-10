@@ -196,16 +196,17 @@
             Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
-          <input  class="blog-form-email-sub" type="email" name="email-for-subscribe" placeholder="email@excample.com" required>
+          <label for="email-for-subscribe">
+          <input  class="blog-form-email-sub" type="email" name="email-for-subscribe" id="email-for-subscribe" placeholder="email@excample.com" required>
+          </label>
           <input class="blog-form-btn" type="submit" value="Отправить">
-
         </form>
       </div>
     </section>
     <section class="location-wrapper">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="location-map-block">
-        <div id="map"></div>
+        <div id="map" class="map"></div>
         <img class="location-pin-on-map" src="../img/location-map-pin.png" width="80" height="140" alt="Маркер на карте нашего магазина">
       </div>
       <div class="location-address">
