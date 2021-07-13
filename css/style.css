@@ -815,15 +815,15 @@ line-height: 24px;
   width: 267px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 .item-image {
   position: relative;
   z-index: 5;
-  margin-bottom:  17px;
+  /*margin-bottom:  17px;*/
   border-radius: 50%;
-  margin-bottom: 11px;
+  /*margin-bottom: 126px;*/
 }
 .item-price {
   position: absolute;
@@ -864,9 +864,10 @@ line-height: 24px;
   text-decoration-color: var(--white);
 }
 .item-show {
-  position: absolute;
-  display: none;
-  bottom: -50px;
+display: inline-block;
+    vertical-align: top;
+    position: absolute;
+  /*bottom: -50px;*/
   z-index: 5;
   left: 50%;
   transform: translateX(-50%);
@@ -881,22 +882,36 @@ line-height: 24px;
   margin:0;
   text-align:  center;
   box-sizing: border-box;
-  width: 200px;
-  max-height: 44px;
-      top: calc(100% + 17px);
-    left: calc(50% - 100px);
+  min-width: 200px;
+  min-height: 44px;
+/*      top: calc(100% + 17px);
+    left: calc(50% - 100px);*/
+
+    top: calc(100% + 17px);
+    bottom: 17px;
+    left: calc(50% + 10px);
+    z-index: 30;
+    /*display: none;*/
+    /*padding: 12px 16px;*/
+    font-size: 18px;
+    line-height: 24px;
+
 }
 .catalog-list-item div {
+  display: block;
+  width: 267px;
+  height: 267px;
 width: 100%;
-    font-size: 0;
-    line-height: 0;
+   /* font-size: 0;
+    line-height: 0;*/
     background-color: #f26843;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 12px;
 }
 .catalog-list-item img {
-max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .catalog-list-item h3 {
@@ -905,19 +920,10 @@ max-width: 100%;
     padding: 0;
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
 }
 
-.catalog-list-item:after {
-    z-index: 5;
-    position: absolute;
-    top: -6px;
-    left: -10px;
-    display: none;
-    width: 107.5%;
-    height: calc(100% + 95px);
-    background-color: rgba(255,255,255,.2);
-    border-radius: 5px;
-}
+
 
 .item-hit:before {
   content: "";
@@ -953,6 +959,18 @@ max-width: 100%;
   padding-bottom:  21px;
   height: 402px;
   box-sizing: border-box;
+
+    z-index: 5;
+
+  position: absolute;
+  top: -6px;
+  left: -10px;
+  display: block;
+  width: 107.5%;
+  height: calc(100% + 95px);
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+
 }
 .catalog-list-item:hover:after {
   display: block;
