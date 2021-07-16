@@ -1,15 +1,15 @@
 let map;
 const coordinates = {  lat: 59.968322, lng: 30.317359};
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
+  map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 59.968466, lng: 30.321725 },
     zoom: 16,
   });
   new google.maps.Marker({
     position: coordinates,
     map,
-    title: "Мы здесь!",
-    // content:'<h1 class="blog-content-link">mifomen</h1>',
+    title: 'Мы здесь!',
+    // content:'<h1 class='blog-content-link'>mifomen</h1>',
     icon: 'img/location-map-pin.png',
     draggable: false
   });
