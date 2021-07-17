@@ -1687,7 +1687,7 @@ background-color: var(--white);
   color:  var(--white);
 
   padding: 0px 0 1px 2px;
-  margin-bottom:  26px;
+  margin-bottom:  28.5px;
 }
 .catalog-filter {
   width: var(--conteiner-width);
@@ -2080,8 +2080,8 @@ opacity: 1;
   box-sizing: padding-box;
   margin-top: 27px;
   margin-left:  15px;
-  margin-right: auto;
-  padding: 6px 27px 8px 28px;
+  /*margin-right: auto;*/
+  padding: 7px 28px 7px 27px;
 }
 
 
