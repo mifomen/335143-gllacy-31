@@ -1227,8 +1227,8 @@ margin-left: 20px;*/
 .blog-theme,
 .blog-form-wrapper {
   width: 560px;
-  height: 220px;
-  max-height:  220px;
+  min-height: 220px;
+  /*max-height:  220px;*/
   box-sizing: border-box;
   border-radius: 16px;
 }
@@ -1243,7 +1243,6 @@ margin-left: 20px;*/
   font-size: 24px;
   line-height: 30px;
   text-decoration: underline;
-
   width: 285px;
 
 }
@@ -1251,10 +1250,11 @@ margin-left: 20px;*/
   display: flex;
   background-image: url('../img/blog-bg-new2.png');
   background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
   padding: 5px 6px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 .blog-form  {
   position: relative;
