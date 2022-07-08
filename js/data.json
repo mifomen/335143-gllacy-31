@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "name": "Сливочное с апельсиновым джемом и цитрусовой стружкой",
+    "price": 310,
+    "chocolate": false,
+    "sugar": false,
+    "fruts": true,
+    "syrop": false,
+    "jam": true,
+    "fat-content": 10
+  },
+  {
+    "id": 2,
+    "name": "Сливочно-кофейное с кусочками шоколада",
+    "price": 380,
+    "chocolate": true,
+    "sugar": false,
+    "fruts": false,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 3,
+    "name": "Сливочно-клубничное с присыпкой из белого шоколада",
+    "price": 355,
+    "chocolate": true,
+    "sugar": false,
+    "fruts": true,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 4,
+    "name": "Сливочное крем-брюле <br> с карамельной подливкой",
+    "price": 415,
+    "chocolate": false,
+    "sugar": false,
+    "fruts": false,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 5,
+    "name": "Сливочное с брусничным джемом",
+    "price": 325,
+    "chocolate": false,
+    "sugar": false,
+    "fruts": false,
+    "syrop": false,
+    "jam": true,
+    "fat-content": 10
+  },
+  {
+    "id": 6,
+    "name": "Сливочно-черничное с цельными ягодами черники",
+    "price": 410,
+    "chocolate": false,
+    "sugar": false,
+    "fruts": true,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 7,
+    "name": "Сливочно-лимонное с карамельной присыпкой",
+    "price": 315,
+    "chocolate": false,
+    "sugar": false,
+    "fruts": false,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 8,
+    "name": "Сливочное с шоколадной стружкой",
+    "price": 320,
+    "chocolate": true,
+    "fruts": false,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 9,
+    "name": "Сливочно-ванильное с кусочками шоколада",
+    "price": 440,
+    "chocolate": true,
+    "sugar": false,
+    "fruts": false,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 10,
+    "name": "Сливочноe с ментоловым сиропом",
+    "price": 435,
+    "chocolate": false,
+    "sugar": false,
+    "fruts": false,
+    "syrop": true,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 11,
+    "name": "Сливочное с кусочками черного шоколада",
+    "price": 355,
+    "chocolate": true,
+    "sugar": false,
+    "fruts": false,
+    "syrop": false,
+    "jam": false,
+    "fat-content": 10
+  },
+  {
+    "id": 12,
+    "name": "Сливочное с мятным сиропом",
+    "price": 420,
+    "chocolate": false,
+    "sugar": false,
+    "fruts": false,
+    "syrop": true,
+    "jam": false,
+    "fat-content": 10
+  }
+]

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.png">
   <link rel="icon" href="img/favicon/icon-main.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/152.png">
@@ -83,7 +83,7 @@
                     <img class="basket-item-img" src="img/hit-icecream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                   <p class="basket-item-name">Пломбир с апельсиновым джемом</p>
                   <p class="basket-item-order">1,5 кг х <span class="basket-item-price">200 руб.</span></p>
-                  <p class="basket-item-cost">300 руб.</p>
+                  <p class="basket-item-cost"><span>300</span> руб.</p>
                 </li>
 
                 <li class="basket-item">
@@ -91,10 +91,10 @@
                   <img class="basket-item-img" src="img/hit-icecream-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                   <p class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
                   <p class="basket-item-order">1,5 кг х <span class="basket-item-price">300 руб.</span></p>
-                  <p class="basket-item-cost">450 руб.</p>
+                  <p class="basket-item-cost"><span>450</span> руб.</p>
                 </li>
               </ul>
-              <p class="basket-total-cost">Итого: 750 руб.</p>
+              <p class="basket-total-cost">Итого: <span class="js-total-cost">750</span> руб.</p>
               <a class="conform-order-btn" href="blank.html">Оформить заказ</a>
             </div>
           </ul>
@@ -165,11 +165,11 @@
           <label for="chocolate-filler">шоколадные</label>
           <input class="visually-hidden" type="checkbox" name="sugar" id="sugar-filler" checked>
           <label for="sugar-filler">сахарные присыпки</label>
-          <input class="visually-hidden" type="checkbox" name="fruits" id="fruits-filler">
+          <input class="visually-hidden" type="checkbox" name="fruits" id="fruits-filler" checked>
           <label for="fruits-filler">фрукты</label>
-          <input class="visually-hidden" type="checkbox" name="syrup" id="syrup-filler">
+          <input class="visually-hidden" type="checkbox" name="syrup" id="syrup-filler" checked>
           <label for="syrup-filler">сиропы</label>
-          <input class="visually-hidden" type="checkbox" name="jam" id="jam-filler">
+          <input class="visually-hidden" type="checkbox" name="jam" id="jam-filler" checked>
           <label for="jam-filler">джемы</label>
         </div>
       </div>
@@ -177,7 +177,7 @@
     </form>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог мороженного!</h2>
-      <ul class="catalog-list catalog-grid">
+      <ul class="catalog-list js-add-items">
         <li class="catalog-list-item">
           <div>
             <img  class="item-image" src="img/products-icecream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -355,6 +355,6 @@
       <p class="footer-author-name">Сделано в <a class="footer-author-site-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2021</p>
     </div>
   </footer>
-    <script src="js/main.min.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
   </html>

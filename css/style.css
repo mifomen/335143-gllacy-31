@@ -885,20 +885,17 @@ background-color: var(--slider-bg);
   box-sizing: border-box;
   width: var(--conteiner-width);
 }
+
 .catalog-list {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 26px;
   list-style: none;
   box-sizing: padding-box;
-  margin-bottom:  40px;
-}
-.catalog-grid {
-  grid-template-rows: 1fr 1fr 1fr;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   grid-row-gap:  38px;
-  /* font-family: var(--basic-font);*/
+  column-gap: 26px;
   margin-bottom:  75px;
 }
 
